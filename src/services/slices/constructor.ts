@@ -23,7 +23,6 @@ const constructorSlice = createSlice({
       state.bun = action.payload;
     },
     addIngredient: (state, action: PayloadAction<TConstructorIngredient>) => {
-      console.log('>>> Добавление ингредиента. Current state:', state);
       if (!state.ingredients) state.ingredients = []; // ← перестраховка
       state.ingredients.push(action.payload);
     },
