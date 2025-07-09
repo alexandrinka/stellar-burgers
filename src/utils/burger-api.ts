@@ -1,3 +1,4 @@
+import { log } from 'console';
 import { setCookie, getCookie } from './cookie';
 import { TIngredient, TOrder, TOrdersData, TUser } from './types';
 
