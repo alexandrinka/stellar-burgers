@@ -14,7 +14,6 @@ import ingredientsReducer, {
 } from '../../slices/ingredients';
 import { TConstructorIngredient } from '../../../utils/types';
 
-// 👇 Утилита для создания полного мок-ингредиента
 const createMockIngredient = (
   overrides: Partial<TConstructorIngredient> = {}
 ): TConstructorIngredient => ({
@@ -29,7 +28,7 @@ const createMockIngredient = (
   image: 'https://fake.image/ingredient.png',
   image_mobile: 'https://fake.image/ingredient-mobile.png',
   image_large: 'https://fake.image/ingredient-large.png',
-  id: 'unique-id', // поле для drag-and-drop
+  id: 'unique-id',
   ...overrides
 });
 
